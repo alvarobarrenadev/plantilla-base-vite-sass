@@ -1,0 +1,9 @@
+@use '@abstracts/variables' as v;
+
+html * {
+    font-family: v.$roboto-font;
+}
+ 
+body {
+    overflow-x: hidden;
+}
