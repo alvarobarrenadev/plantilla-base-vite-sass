@@ -19,10 +19,9 @@ export default defineConfig({
     }
   },
   css: {
-    devSourcemap: true, // Facilita la depuración del Sass
+    devSourcemap: true, // Facilita la depuración de Sass
     preprocessorOptions: {
       scss: {
-        // Usa includePaths en lugar de loadPaths
         includePaths: [
           resolve(__dirname, './src/sass'),
           resolve(__dirname, './src/sass/abstracts'),
