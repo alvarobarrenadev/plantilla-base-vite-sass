@@ -3,6 +3,18 @@ import { resolve } from 'path';
 
 export default defineConfig({
   base: "/NOMBRE_DEL_REPO/",
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+        // Puedes añadir más páginas así:
+        // location: resolve(__dirname, "location.html"),
+        // about: resolve(__dirname, 'about.html'),
+        // contact: resolve(__dirname, 'contact.html'),
+        // gallery: resolve(__dirname, 'gallery.html'),
+      },
+    },
+  },
   resolve: {
     alias: {
       // Alias principal para la carpeta src
