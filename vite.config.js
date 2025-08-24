@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  base: "/NOMBRE_DEL_REPO/",
+  base: "/NOMBRE_DEL_REPO/", // Solo para Github Pages. Para desplegar en Vercel, solo poner /
   build: {
     rollupOptions: {
       input: {
